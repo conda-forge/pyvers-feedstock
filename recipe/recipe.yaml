@@ -13,7 +13,7 @@ source:
   sha256: 7f4a3e5346d4eb97eedf78a088fee37c2ee044499b6742e37c0094d0f9c695d2
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -24,7 +24,6 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - packaging >=25.0,<26.0
 
 tests:
   - python:
