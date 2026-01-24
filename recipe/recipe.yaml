@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyvers
-  version: 0.1.0
+  version: "0.2.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://github.com/vmoens/pyvers/archive/v${{ version }}.tar.gz
-  sha256: 8da0cc90029bd57f172625e3c1a634ff93206df17d60b0dfd10c8c9d3254751a
+  sha256: 7f4a3e5346d4eb97eedf78a088fee37c2ee044499b6742e37c0094d0f9c695d2
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -24,7 +24,6 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - packaging >=25.0,<26.0
 
 tests:
   - python:
