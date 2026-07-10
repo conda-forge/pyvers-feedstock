@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyvers
-  version: "0.2.2"
+  version: "0.2.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/vmoens/pyvers/archive/v${{ version }}.tar.gz
-  sha256: 7f4a3e5346d4eb97eedf78a088fee37c2ee044499b6742e37c0094d0f9c695d2
+  sha256: 4bdbc687f3f12ad9b38e4f7116d39a23e43cfbf2d15b8c767b040b712e8ff0fc
 
 build:
   number: 0
